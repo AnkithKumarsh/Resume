@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Resume</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Ankith Kumar</h1>
+      <p>Web Developer & Designer</p>
+    </header>
+
+    <section id="bio">
+      <h2>Btech</h2>
+      <p>I'm currently pursuing 4th semester in Information Technology</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project" onclick="showProjectModal('Project 1')">
+        <h3>Project 1</h3>
+        <p>E-Library</p>
+      </div>
+      <div class="project" onclick="showProjectModal('Project 2')">
+        <h3>Project 2</h3>
+        <p>Birthday wishing website</p>
+        <a href="https://ankithkumarsh.github.io/Birthaday/">Click here</a>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill">
+        <h3>HTML</h3>
+        <div class="progress-bar" style="width: 80%"></div>
+      </div>
+      <div class="skill">
+        <h3>CSS</h3>
+        <div class="progress-bar" style="width: 75%"></div>
+      </div>
+      <div class="skill">
+        <h3>JavaScript</h3>
+        <div class="progress-bar" style="width: 70%"></div>
+      </div>
+      <div class="skill">
+        <h3>C programing</h3>
+        <div class="progress-bar" style="width: 70%"></div>
+      </div>
+      <div class="skill">
+        <h3>C++ programing</h3>
+        <div class="progress-bar" style="width: 80%"></div>
+        <br />
+      </div>
+      <br />
+    </section>
+
+    <footer>
+      <p>Contact: ankithkumar.221it***@nitk.edu.in</p>
+    </footer>
+
+    <div class="modal" id="projectModal">
+      <div class="modal-content">
+        <span class="close" onclick="hideProjectModal()">&times;</span>
+        <h2 id="projectTitle"></h2>
+        <p id="projectDescription"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
